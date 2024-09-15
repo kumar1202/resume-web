@@ -1,0 +1,161 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 3.0 (December 17, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	11pt, % Default font size, can use 10pt, 11pt or 12pt
+]{resume} % Use the resume class
+
+\usepackage{ebgaramond} % Use the EB Garamond font
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+%------------------------------------------------
+
+\name{Kumar Abhijeet} % Your name to appear at the top
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+\address{Bengaluru \\ India} % Main address
+
+\address{\href{https://www.kumarabhijeet.me/}{portfolio\textbf{X}blog} \\ \href{https://github.com/kumar1202}{Github} \\ \href{https://www.linkedin.com/in/kumar-abhijeet-3b4b4a137/}{LinkedIn}}
+
+\address{(+91)~$\cdot$~8210330554 \\ kumarabhijeet1202@gmail.com} % Contact information
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{rSection}{Experience}
+
+        \begin{rSubsection}{\href{https://www.pinelabs.com/}{Pine Labs}}{April 2024 - Present}{Senior Software Engineer - Infra Platforms}{Bengaluru, KA}
+            \item Architected the APIOps Platform to manage Kong API Gateways with service equivalence in a multi-regional datacenter setup reducing the~\textbf{API/microservice onboarding time from 1 week to 30 minutes}.
+            \item Improved the Kafka Fleet's reliability by~\textbf{three 9s} to improve async messaging among microservices across the org with multi-region deployments, disaster recovery strategies and enhanced observability.
+	\end{rSubsection}
+
+
+	\begin{rSubsection}{\href{https://www.gotocompany.com/en/about-us}{GoTo Group (Gojek)}}{October 2021 - April 2024}{Software Engineer II - Cloud Platform}{Bengaluru, KA}
+		\item Established the in-house Database-as-a-Service(DBaaS) ecosystem responsible for handling 100+ datastores across the organisation like Patroni, Postgres, Consul \& Redis leading to the reduction in cloud costs by~\textbf{\$800/datastore/month}.
+		\item Designed Terraform modules and Chef cookbooks to provision and configure the above datastores in order to support upto \textbf{5 9s availability} and architected disaster recovery systems to ensure less than \textbf{10MBs in data loss}.
+
+        \item Improved visibility and minimized developer intervention with out-of-the-box alerting, observability and logging using Grafana/Prometheus and ELK stack reducing the \textbf{MTTD to less than 10 minutes}.
+          
+          \item Decreased end-to-end datastore onboarding time from couple of days to \textbf{just 15 minutes} by utilizing IaC(Infrastructure as Code) abstracted over a Web Interface written in React plugged with a pull request automation using Atlantis.
+	\end{rSubsection}
+
+%------------------------------------------------
+
+	
+ \begin{rSubsection}{\href{https://www.gotocompany.com/en/about-us}{GoTo Group (Gojek)}}{October 2021 - April 2024}{Software Engineer II - Cloud Platform}{Bengaluru, KA}
+	\item Developed the application inventory and orchestration system in Rails to offer Platform-as-a-Service(PaaS) which in turn reduced the application lifecycle period from \textbf{weeks to 30 minutes} for product teams.
+		\item Increased dev productivity by saving \textbf{1 hour/day} by incorporating features like continuous deployment, infra provisioning. out-of-the-box logging and observability support into the platform.
+          \item Streamlined the user experience to raise the platform's \textbf{MAU by 150\%} with developing a CLI using Ruby's Thor library and Web Portal made with React.
+		\item Successfully onboarded and managed \textbf{over 200 microservices}, establishing the internal PaaS as the exclusive developer-facing platform within the organization.
+\end{rSubsection}	
+
+%------------------------------------------------
+
+	\begin{rSubsection}{\href{https://www.paypal.com/in/home}{Paypal}}{April 2019 - July 2019}{Software Development Intern - Merchant Analytics}{Bengaluru, KA}
+		\item Enhanced the \textbf{customer feedback loop} by implementing a Spring Batch job that extracts and processes merchant feedback data from an ElasticSearch click-stream index along with sending an email to the respective stakeholders.
+          \item Developed a Javascript module to automate the generation of release notes from commit messages and tags.
+	\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Evangelism}
+\textbf{Projects}
+
+	\item \href{https://github.com/kumar1202/gojira}{\textbf{Gojira}} - An opinionated APIOps framework along with a CI/CD tool to enable service/route equivalence across Kong clusters in multiple regions and perform tag based service segregation for case-specific Kong deployments.
+
+\hfill \break.
+ 
+ \textbf{Talks}
+ 
+\item \href{https://speakerdeck.com/kumar_abhijeet/multi-region-apiops-with-kong}{\textbf{Multi-Region APIOps with Kong}} \hfill \textit{Platform Engineering Meetup, BLR} \\ 
+	Building APIOps platforms for Kong clusters in a multi-regional datacenter scenario involving service equivalence and data protection constraints.
+
+\item \href{https://youtu.be/m3RpZLaq7H4?si=4n0E7gAYt-GP0pHL}{\textbf{How Patroni solved Database Reliability at Gojek}} \hfill \textit{BangPypers Meetup, BLR} \\ 
+	Tackling database reliability at country-scale with Patroni and achieving business value with internal Database-as-a-service Platform.
+
+ \item \href{https://youtu.be/6Eap81aTUaA?si=Q5X0WnvMJGHPcZlm}{\textbf{Crafting Chef Recipes for Reliable Infrastructure}} \hfill \textit{Ruby Users Group, BLR} \\ 
+	Best practices for writing Chef recipes for configuring Infra at scale and common pitfalls and deployment patterns with documented experiences.
+
+ 
+
+\end{rSection}
+
+\begin{rSection}{Education}
+	
+	\textbf{RV College of Engineering, Bengaluru} \hfill \textit{Jul 2020} \\ 
+	B.E. in Information Science \& Engineering, Minor in Cloud Computing \& Big Data \smallskip \\
+	Cumulative GPA: 8.7
+	
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+		Languages \& Frameworks & Ruby, Rails, Python, Bash, Javascript, Golang \\
+		Infrastructure Tools & Chef, Terraform, Terragrunt, Ansible, Docker, Kubernetes \\
+            Datastores & PostgreSQL, Patroni, Consul, Kafka, Redis \\
+            Cloud Platforms/OS & GCP, Linux, Bare Metal \\
+            DevOps Principles & CI/CD, Containerization, IAC, Monitoring/Logging, Automated  Testing\\
+		Protocols \& Tools & REST, JSON, HCL, Git, Vim, zsh
+	\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
